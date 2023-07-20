@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>web Designer</p>
+                <h1>Hi, I am Mulusew Zelalem </h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="image/my-photo.jpg">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am mulusew zelalem, I have Bsc dgree in electrical 
+                        and computer enginnering now I am attending masters 
+                        program in computer science.
+                 <p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skill')"> Skill</p>
+                        <p class="tab-link" onclick="opentab('experiance')">  Experiance</p>
+                        <p class="tab-link"onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skill">
+                        <ul>
+                            <li><span>ellectrical installation</span><br>designing building installationn</li>
+                            <li><span>networking</span><br>network installation and design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experiance">
+                        <ul>
+                            <li><span>2020-current</span><br>team leader</li>
+                            <li><span>2018-2021</span><br>supervisor</li>
+                            <li><span>2016-2018</span><br>ICS engineer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2015</span><br>Electrical and computer engineering</li>
+                            <li><span>2022-now</span><br>masters in computer science</li>
+                        </ul>
+                    </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    <!--////////////////service//////////////////-->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Service</h1>
+            <div class="service-list">
+                <div>
+                    <h2>consultant</h2>
+                    <p> building installation consultant
+                        and networking consultant
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>managing project</h2>
+                    <p> leading electrical installation and 
+                        software project
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>security system design</h2>
+                    <p> cctv system,access control,
+                        parking managment system design
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+var tablink=document.getElementsByClassName("tab-link");
+var tabcontent=document.getElementsByClassName("tab-content");
+
+function opentab(tabname){
+    for(tablink of tablink){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontent){
+    tabcontent.classList.remove("active-tab");
+    }
+    document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+</body>
+</html>
