@@ -13,11 +13,11 @@
             <nav>
                 <img src="image/logo.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -96,6 +96,60 @@
             </div>
         </div>
     </div>
+
+    <!--/////////////////////////portfolio//////////////-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work1.jpg">
+                    <div class="layer">
+                        <h3>cctv system design</h3>
+                        <p>video servellance system design for 
+                            differnt building.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work2.jpg">
+                    <div class="layer">
+                        <h3>access control system design</h3>
+                        <p>access control system design for 
+                            differnt building.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--///////////contact//////////////-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p>contact@example.com</p>
+                <p>09215750</p>
+                <div class="social-icon">
+                    <a href="https://facebook.com/">facebook</a>
+                    <a href="">linkdin</a>
+                </div>
+                <a href="image/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form>
+                <input type="text" name="Name" placeholder="your name" required>
+                <input type="email" name="email" placeholder="your email" required>
+                <textarea name="Message" rows="5" placeholder="your message"></textarea>
+                <button type="submit"class="btn btn2">submit</button>
+               </form> 
+            </div>
+        </div>
+    </div>
+</div>
+
     <script>
 var tablink=document.getElementsByClassName("tab-link");
 var tabcontent=document.getElementsByClassName("tab-content");
